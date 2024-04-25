@@ -90,10 +90,11 @@ A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Cr
 
 # Installation in xampp
 
-## Requisitos previos
+## Previous requirements
 
-- XAMPP instalado y configurado en tu sistema.
-- Conocimientos básicos de Drupal y PHP 8.1
+- XAMPP installed and configured on your system.
+- Basic knowledge of Drupal and PHP 8.1
+- Composer
 
 1. Clone this repo into your Projects directory
 
