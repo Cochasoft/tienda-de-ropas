@@ -88,7 +88,7 @@ If you are basing your project code base on this repo, make sure you regenerate 
 A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";'`
 
 
-## Installation in xampp
+# Installation in xampp
 
 ## Requisitos previos
 
