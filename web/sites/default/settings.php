@@ -825,16 +825,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_MJnp46jbLz3dKuJyzTcCLPRSITuR0pHeVvTy5KtcnoT4YnQLTEyiZOe6zp0Y287M3jd75TnQDA/sync';
-$databases['default']['default'] = array (
-  'database' => 'default',
-  'username' => 'user',
-  'password' => 'user',
-  'prefix' => '',
-  'host' => 'db',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'driver' => 'mysql',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
+$settings['config_sync_directory'] = '../config/sync';
+$config['system.logging']['error_level']='verbose';
