@@ -135,6 +135,12 @@ $databases['default']['default'] = array (
     ```
     vendor/bin/drush sql-cli < db/drupal-taller.sql
     ```
+    ```
+    vendor/bin/drush updb
+    ```
+     ```
+    vendor/bin/drush cr
+    ```
 3. In your browser go to the following route.
 
 http://localhost/drupal-taller/web
