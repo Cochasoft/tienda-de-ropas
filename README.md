@@ -106,6 +106,8 @@ A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Cr
     ```
     composer install
     ```
+2. Create a database taller-db.
+3. Run the command to import the database.
     ```
     vendor/bin/drush sql-dump > db/drupal-taller.sql
     ```
