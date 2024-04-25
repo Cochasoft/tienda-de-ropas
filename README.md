@@ -86,3 +86,28 @@ echo -e "Open ${yellow}http://${VIRTUAL_HOST}${NC}:8081 in your browser to verif
 This repo is intended for quick start demos and includes a hardcoded value for `hash_salt` in `settings.php`.
 If you are basing your project code base on this repo, make sure you regenerate and update the `hash_salt` value.
 A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";'`
+
+
+## Installation in xampp
+
+## Requisitos previos
+
+- XAMPP instalado y configurado en tu sistema.
+- Conocimientos básicos de Drupal y PHP 8.1
+
+1. Clone this repo into your Projects directory
+
+    ```
+    git clone https://github.com/Cochasoft/tienda-de-ropas.git drupal-taller
+    cd drupal-taller
+    ```
+2. In the console execute the following commands.
+    ```
+    composer install
+    ```
+    ```
+    vendor/bin/drush sql-dump > db/drupal-taller.sql
+    ```
+3. In your browser go to the following route.
+
+http://localhost/drupal-taller/web
