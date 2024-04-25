@@ -24,8 +24,12 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 
     ```
     git clone https://github.com/Cochasoft/tienda-de-ropas.git drupal-taller
+    ```
+    
+    ```
     cd drupal-taller
     ```
+      
 
 2. Initialize the site
 
@@ -100,16 +104,36 @@ A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Cr
 
     ```
     git clone https://github.com/Cochasoft/tienda-de-ropas.git drupal-taller
+    ```
+    ```
     cd drupal-taller
     ```
+   
 2. In the console execute the following commands.
     ```
     composer install
     ```
-2. Create a database taller-db.
-3. Run the command to import the database.
+3. Create a database in phpmyadmin 'taller-db'.
+4. Modify the settings.php file that is in the following path '/web/sites/default/settings.php'.
+   
+```php
+$databases['default']['default'] = array (
+  'database' => '{namedatabase}',
+  'username' => '{user}',
+  'password' => '{password}',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+```
+
+5. Run the command to import the database.
     ```
-    vendor/bin/drush sql-dump > db/drupal-taller.sql
+    vendor/bin/drush sql-cli < db/drupal-taller.sql
     ```
 3. In your browser go to the following route.
 
