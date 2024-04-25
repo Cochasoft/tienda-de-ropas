@@ -23,8 +23,8 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 1. Clone this repo into your Projects directory
 
     ```
-    git clone https://github.com/Kevin-Jhonatan/boilerplate-drupal-10.2.4-composer.git drupal10.2.4
-    cd drupal10.2.4
+    git clone https://github.com/Cochasoft/tienda-de-ropas.git drupal-taller
+    cd drupal-taller
     ```
 
 2. Initialize the site
@@ -39,7 +39,7 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 3. Point your browser to
 
     ```
-    http://drupal10.docksal.site
+    http://drupal-taller.docksal.site/
     ```
 
 When the automated install is complete, the command line output will display the admin username and password.
