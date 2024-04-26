@@ -1,0 +1,19 @@
+uuid: 2a1a5ff0-e8ae-49c0-9faf-619fdb00b371
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contactanos
+    - field.storage.contact_message.field_nombres
+id: contact_message.contactanos.field_nombres
+field_name: field_nombres
+entity_type: contact_message
+bundle: contactanos
+label: Nombres
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

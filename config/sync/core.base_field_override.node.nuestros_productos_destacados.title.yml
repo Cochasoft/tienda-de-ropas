@@ -1,0 +1,18 @@
+uuid: 84b879a7-bddb-4b91-ab58-58d61a2e4765
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nuestros_productos_destacados
+id: node.nuestros_productos_destacados.title
+field_name: title
+entity_type: node
+bundle: nuestros_productos_destacados
+label: 'Nombre de producto'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

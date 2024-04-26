@@ -1,0 +1,78 @@
+uuid: a77ef86a-fb6d-4858-8b62-c9ad9e268fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nuestras_ofertas_temporales.field_estado
+    - field.field.node.nuestras_ofertas_temporales.field_fecha_de_fin
+    - field.field.node.nuestras_ofertas_temporales.field_fecha_de_inicio
+    - field.field.node.nuestras_ofertas_temporales.field_imagen_de_oferta
+    - node.type.nuestras_ofertas_temporales
+  module:
+    - options
+    - user
+id: node.nuestras_ofertas_temporales.default
+targetEntityType: node
+bundle: nuestras_ofertas_temporales
+mode: default
+content:
+  field_estado:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_fecha_de_fin:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_fecha_de_inicio:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_imagen_de_oferta:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

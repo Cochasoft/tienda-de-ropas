@@ -1,0 +1,23 @@
+uuid: af91fad7-92c0-421e-a836-420db87b5178
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_estado
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+  module:
+    - options
+id: taxonomy_term.nuestras_ofertas_temporales.field_estado
+field_name: field_estado
+entity_type: taxonomy_term
+bundle: nuestras_ofertas_temporales
+label: Estado
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: activo
+default_value_callback: ''
+settings: {  }
+field_type: list_string

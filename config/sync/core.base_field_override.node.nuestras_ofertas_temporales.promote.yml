@@ -1,0 +1,22 @@
+uuid: 1328eb7f-3df0-4cfb-8545-192dd2694cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nuestras_ofertas_temporales
+id: node.nuestras_ofertas_temporales.promote
+field_name: promote
+entity_type: node
+bundle: nuestras_ofertas_temporales
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

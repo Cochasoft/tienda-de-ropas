@@ -1,0 +1,21 @@
+uuid: 056c3c2b-c671-49b9-bba7-0f3f59ba7df9
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_apellidos
+field_name: field_apellidos
+entity_type: contact_message
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

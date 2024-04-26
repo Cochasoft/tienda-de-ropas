@@ -1,0 +1,21 @@
+uuid: 430f9cc9-13d8-4512-bc6c-74b23a55dcb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fecha_de_fin
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+  module:
+    - datetime
+id: taxonomy_term.nuestras_ofertas_temporales.field_fecha_de_fin
+field_name: field_fecha_de_fin
+entity_type: taxonomy_term
+bundle: nuestras_ofertas_temporales
+label: 'Fecha de fin'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

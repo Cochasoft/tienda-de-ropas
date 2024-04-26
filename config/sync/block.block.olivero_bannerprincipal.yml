@@ -1,0 +1,30 @@
+uuid: e430880f-4f3a-4d81-8353-69337d9c50ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:d34caa16-a04f-49fd-9696-7486c509f2af'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_bannerprincipal
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:d34caa16-a04f-49fd-9696-7486c509f2af'
+settings:
+  id: 'block_content:d34caa16-a04f-49fd-9696-7486c509f2af'
+  label: 'Banner principal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

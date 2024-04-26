@@ -1,0 +1,19 @@
+uuid: 7b995725-e496-40dd-a7da-f397c8718b4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_inicio
+    - node.type.nuestras_ofertas_temporales
+id: node.nuestras_ofertas_temporales.field_fecha_de_inicio
+field_name: field_fecha_de_inicio
+entity_type: node
+bundle: nuestras_ofertas_temporales
+label: 'Fecha de inicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

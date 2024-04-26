@@ -1,0 +1,23 @@
+uuid: ce6e5f40-ff92-4f69-bdcc-e32ad368c083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.nuestras_ofertas_temporales
+  module:
+    - options
+id: node.nuestras_ofertas_temporales.field_estado
+field_name: field_estado
+entity_type: node
+bundle: nuestras_ofertas_temporales
+label: Estado
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: activo
+default_value_callback: ''
+settings: {  }
+field_type: list_string

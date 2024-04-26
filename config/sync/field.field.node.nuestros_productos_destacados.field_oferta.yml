@@ -1,0 +1,29 @@
+uuid: 004a7729-795e-4d8e-9994-f409fdea33fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oferta
+    - node.type.nuestros_productos_destacados
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+id: node.nuestros_productos_destacados.field_oferta
+field_name: field_oferta
+entity_type: node
+bundle: nuestros_productos_destacados
+label: Oferta
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nuestras_ofertas_temporales: nuestras_ofertas_temporales
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

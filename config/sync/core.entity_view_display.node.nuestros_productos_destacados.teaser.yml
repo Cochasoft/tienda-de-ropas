@@ -1,0 +1,32 @@
+uuid: e91e80b0-d369-4b51-9828-8d392feeac72
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nuestros_productos_destacados.field_imagen_de_producto
+    - field.field.node.nuestros_productos_destacados.field_oferta
+    - image.style.large
+    - node.type.nuestros_productos_destacados
+  module:
+    - media
+    - user
+id: node.nuestros_productos_destacados.teaser
+targetEntityType: node
+bundle: nuestros_productos_destacados
+mode: teaser
+content:
+  field_imagen_de_producto:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_oferta: true
+  links: true

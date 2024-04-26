@@ -1,0 +1,18 @@
+uuid: e4971ece-2ab4-437b-ad3d-9816c36fb6cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nuestras_ofertas_temporales
+id: node.nuestras_ofertas_temporales.title
+field_name: title
+entity_type: node
+bundle: nuestras_ofertas_temporales
+label: 'Nombre de la oferta'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

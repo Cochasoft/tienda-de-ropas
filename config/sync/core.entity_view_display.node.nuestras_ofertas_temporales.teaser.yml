@@ -1,0 +1,28 @@
+uuid: f7272b55-2f65-4916-91be-6b77e9aa8d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nuestras_ofertas_temporales.field_estado
+    - field.field.node.nuestras_ofertas_temporales.field_fecha_de_fin
+    - field.field.node.nuestras_ofertas_temporales.field_fecha_de_inicio
+    - field.field.node.nuestras_ofertas_temporales.field_imagen_de_oferta
+    - node.type.nuestras_ofertas_temporales
+  module:
+    - user
+id: node.nuestras_ofertas_temporales.teaser
+targetEntityType: node
+bundle: nuestras_ofertas_temporales
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_estado: true
+  field_fecha_de_fin: true
+  field_fecha_de_inicio: true
+  field_imagen_de_oferta: true

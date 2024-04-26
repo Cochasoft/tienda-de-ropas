@@ -1,0 +1,18 @@
+uuid: eb97ea7b-4d00-4a1d-b98d-fdd58a64a051
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_fecha_de_fin
+field_name: field_fecha_de_fin
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

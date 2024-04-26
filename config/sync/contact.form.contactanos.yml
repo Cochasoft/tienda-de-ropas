@@ -1,0 +1,12 @@
+uuid: eaf844b6-845d-4e28-a026-c14f838e5e6f
+langcode: en
+status: true
+dependencies: {  }
+id: contactanos
+label: Contactanos
+recipients:
+  - kevin@mail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

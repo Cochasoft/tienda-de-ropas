@@ -1,0 +1,29 @@
+uuid: 8da6d173-0adb-466e-96ce-6a97adc39f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagen_de_oferta
+    - media.type.image
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+id: taxonomy_term.nuestras_ofertas_temporales.field_imagen_de_oferta
+field_name: field_imagen_de_oferta
+entity_type: taxonomy_term
+bundle: nuestras_ofertas_temporales
+label: 'Imagen de oferta'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

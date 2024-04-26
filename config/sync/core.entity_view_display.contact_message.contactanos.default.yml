@@ -1,0 +1,38 @@
+uuid: be5beb1d-a06f-474e-869d-015cf33a4091
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contactanos
+    - field.field.contact_message.contactanos.field_apellidos
+    - field.field.contact_message.contactanos.field_nombres
+id: contact_message.contactanos.default
+targetEntityType: contact_message
+bundle: contactanos
+mode: default
+content:
+  field_apellidos:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_nombres:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

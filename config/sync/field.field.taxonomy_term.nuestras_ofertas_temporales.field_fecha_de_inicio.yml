@@ -1,0 +1,21 @@
+uuid: bbd3141b-2ab7-42ad-80b1-a34a0ea67f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fecha_de_inicio
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+  module:
+    - datetime
+id: taxonomy_term.nuestras_ofertas_temporales.field_fecha_de_inicio
+field_name: field_fecha_de_inicio
+entity_type: taxonomy_term
+bundle: nuestras_ofertas_temporales
+label: 'Fecha de inicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

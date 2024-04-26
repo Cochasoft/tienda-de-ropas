@@ -1,0 +1,38 @@
+uuid: 85c294bc-8c32-46e3-bd7d-825f84727019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nuestros_productos_destacados.field_imagen_de_producto
+    - field.field.node.nuestros_productos_destacados.field_oferta
+    - node.type.nuestros_productos_destacados
+  module:
+    - user
+id: node.nuestros_productos_destacados.default
+targetEntityType: node
+bundle: nuestros_productos_destacados
+mode: default
+content:
+  field_imagen_de_producto:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_oferta:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

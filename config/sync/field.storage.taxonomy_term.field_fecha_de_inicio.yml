@@ -1,0 +1,20 @@
+uuid: 1e9ca6a0-e525-4183-8c71-e4ab8d960fec
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - taxonomy
+id: taxonomy_term.field_fecha_de_inicio
+field_name: field_fecha_de_inicio
+entity_type: taxonomy_term
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

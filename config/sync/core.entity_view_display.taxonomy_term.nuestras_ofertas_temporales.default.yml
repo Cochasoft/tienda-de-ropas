@@ -1,0 +1,61 @@
+uuid: 5d8b021c-0aac-43e5-991e-7f70e54ea799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nuestras_ofertas_temporales.field_estado
+    - field.field.taxonomy_term.nuestras_ofertas_temporales.field_fecha_de_fin
+    - field.field.taxonomy_term.nuestras_ofertas_temporales.field_fecha_de_inicio
+    - field.field.taxonomy_term.nuestras_ofertas_temporales.field_imagen_de_oferta
+    - taxonomy.vocabulary.nuestras_ofertas_temporales
+  module:
+    - datetime
+    - options
+    - text
+id: taxonomy_term.nuestras_ofertas_temporales.default
+targetEntityType: taxonomy_term
+bundle: nuestras_ofertas_temporales
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_estado:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fecha_de_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fecha_de_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_de_oferta:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
