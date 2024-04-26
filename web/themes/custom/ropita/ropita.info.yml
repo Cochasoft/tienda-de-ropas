@@ -1,0 +1,11 @@
+name: Ropita
+type: theme
+description: ropita theme
+version: VERSION
+base theme: stable9
+core: 9.x
+core_version_requirement: ^9 || ^10
+
+libraries:
+  - ropita/global-styling
+  - ropita/global-scripts
